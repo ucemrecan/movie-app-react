@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movieApp > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container {
+  transition: transform 0.2s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.moviePoster {
+  width: 200px !important;
+  height: 280px !important;
+
 }
 
-.App-link {
-  color: #61dafb;
+.moviePoster:hover {
+  scale: 1.1;
+  cursor: pointer;
+} 
+
+span {
+  font-weight: bold;
+  background-color: fff;
+  width: 220px;
+  margin-left: 5px;
+  opacity: 0;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span:hover {
+  scale: 1.1;
+}
+
+svg {
+  color: red;
+  margin-left: 10px;
+}
+
+.image-container:hover span{
+  opacity: 1;
+
 }
